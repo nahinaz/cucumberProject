@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/features",
 		//plugin={"html:target/cucumber-html-report"}
-		plugin = {"json:target/cucumber.json","html:target/site/cucumber-pretty"}
+		plugin = {"pretty", "json:target/cucumber.json","html:target/site/cucumber-pretty"}
 )
 
 public class runner{
