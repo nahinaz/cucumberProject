@@ -53,6 +53,7 @@
 
 
 	</dependencies>
+	
 	<profiles>
 		<profile>
 			<id>integration-tests</id>
