@@ -19,7 +19,7 @@ public class driver {
 		
 		if(driver == null){
 			
-			System.setProperty("webdriver.chrome.driver", "/Users/nahinaz/Desktop/chromedriver 6");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver6");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 		}
@@ -38,6 +38,9 @@ public class driver {
 			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.embed(screenshot, "image/png");
 		}
+		
+		driver.close();
+		driver.quit();
 		
 	}
 	
