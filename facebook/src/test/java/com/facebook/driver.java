@@ -19,7 +19,7 @@ public class driver {
 		
 		if(driver == null){
 			
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver6");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 		}
